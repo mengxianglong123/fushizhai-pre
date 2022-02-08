@@ -25,7 +25,7 @@ export default function Card({poem}) {
             <View style={styles.card}>
             {/* 左下角透明图 */}
             <ImageAutoHeight
-            width={125}
+            width={135}
             source={require("../../../../assets/he.png")} style={styles.image}  />
             {/* 作者 */}
             <Text style={styles.author}>|{poem.author}</Text>
@@ -50,8 +50,8 @@ const styles = StyleSheet.create({
     // 卡片整体样式
     card:{
         position:"relative",
-        width:320,
-        height:500,
+        width:"100%",
+        height:"100%",
         backgroundColor:"white",
         borderRadius:7,
         overflow:"hidden",

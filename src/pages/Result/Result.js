@@ -176,12 +176,11 @@ const styles = StyleSheet.create({
     cardItemView:{
         borderWidth:1,
         //borderColor:"#BB4455",
+        margin:1,
         borderColor:theme.color,
-        borderBottomWidth:1,
         padding:10,
         paddingHorizontal:15,
         height:"100%",
-        
         justifyContent:"center",
         alignItems:'center'
     },

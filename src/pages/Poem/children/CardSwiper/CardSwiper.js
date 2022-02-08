@@ -39,8 +39,8 @@ export default function CardSwiper() {
                         backgroundColor={"transparent"}
                         cardHorizontalMargin={0}
                         cardVerticalMargin={0}
-                        cardStyle={{width:320,height:500,}}
-                        containerStyle={{justifyContent:"center",alignItems:"center",with:320,height:500}}
+                        cardStyle={{width:"100%",height:"100%",}}
+                        containerStyle={{justifyContent:"center",alignItems:"center",width:"100%",height:"100%"}}
                         infinite={true}
                         stackSeparation={0}
                         // 滑完就更新
@@ -63,14 +63,14 @@ const styles = StyleSheet.create({
     swiper:{
         justifyContent:"center",
         alignItems:"center",
-        width:320,
-        height:500,
+        width:"90%",
+        height:"90%",
        // backgroundColor:"red"
     },
     swiperItem:{
         alignItems:"center",
         justifyContent:"center",
-        width:320,
-        height:500
+        width:"100%",
+        height:"100%"
     }
 });

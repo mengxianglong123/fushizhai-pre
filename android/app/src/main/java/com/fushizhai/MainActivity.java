@@ -2,11 +2,14 @@ package com.fushizhai;
 
 import com.facebook.react.ReactActivity;
 import android.os.Bundle;
+import org.devio.rn.splashscreen.SplashScreen;
 
 public class MainActivity extends ReactActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-    super.onCreate(null);
+        // true代表全屏，隐藏状态栏
+        SplashScreen.show(this,true);
+        super.onCreate(savedInstanceState);
     }
 
     /**
