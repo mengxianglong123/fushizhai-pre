@@ -32,3 +32,17 @@
 [https://www.jianshu.com/p/1161ac2a71ef](https://www.jianshu.com/p/1161ac2a71ef)
 
 > 修改`android:windowSoftInputMode`即可
+
+- 安卓修改App名称
+[https://blog.csdn.net/y505772146/article/details/79245296](https://blog.csdn.net/y505772146/article/details/79245296)
+
+- 一键生成各种尺寸的图标工具(图标工厂)
+[https://icon.wuruihong.com/](https://icon.wuruihong.com/)
+
+- 生成圆角图片
+[https://www.butterpig.top/radius](https://www.butterpig.top/radius)
+
+- 修改图标：
+[https://blog.csdn.net/weixin_41534645/article/details/81119474](https://blog.csdn.net/weixin_41534645/article/details/81119474)
+
+> 现在每一个尺寸的图标默认都需要提供两个，一个普通，一个圆角，如果没有圆角启动会报错(图标工厂默认只生成一个)，如果不需要圆角则修改`AndroidManifest.xml`，删除`android:roundIcon="@mipmap/ic_launcher_round"`即可
