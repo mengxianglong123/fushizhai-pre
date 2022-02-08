@@ -160,7 +160,6 @@ const styles = StyleSheet.create({
     panel:{
         padding:10,
         backgroundColor:"white",
-        margin:15
     },
     // 最终卡片效果
     card:{
