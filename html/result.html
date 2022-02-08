@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow-x: scroll;
+            white-space: nowrap;
+        }
+        .card{
+            overflow-x: scroll;
+            width: 1200px;
+            height: auto;
+            /* white-space: nowrap; */
+        }
+        .card-inner{
+            font-family: kai;
+            font-size: 45rpx;
+            border: 2px solid #C04851;
+            width: auto !important;
+            overflow: visible;
+        }
+        .card-item{
+            display: inline-block;
+            width: 50px;
+            font-size: 50px;
+            white-space: pre-wrap;
+        }
+        ::-webkit-scrollbar {
+            display: none; /* Chrome Safari */
+        }
+    </style>
+    <script src="./html2canvas.js"></script>
+  </head>
+  <body>
+   
+    <div id="app" class="result">
+        <div class="card" id="card">
+            <div class="card-inner" id="card-inner">
+                <div class="card-item">一岁一枯荣开始</div>
+                <div class="card-item">一岁一枯荣</div>
+                <div class="card-item">一岁一枯荣</div>
+                <div class="card-item">一岁一枯荣</div>
+                <div class="card-item">一岁一枯荣</div>
+                <div class="card-item">一岁一枯荣</div>
+                <div class="card-item">一岁一枯荣</div>
+                <div class="card-item">一岁一枯荣</div>
+                <div class="card-item">一岁一枯荣</div>
+                <div class="card-item">一岁一枯荣</div>
+                <div class="card-item">一岁一枯荣</div>
+                <div class="card-item">一岁一枯荣</div><div class="card-item">一岁一枯荣</div>
+                <div class="card-item">一岁一枯荣</div>
+                <div class="card-item">一岁一枯荣</div>
+                <div class="card-item">一岁一枯荣</div>
+                <div class="card-item">一岁一枯荣</div>
+                <div class="card-item">一岁一枯荣结束</div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- built files will be auto injected -->
+    <script>
+        setTimeout(function cap(){
+            html2canvas(document.querySelector("#card-inner")).then(canvas => {
+                
+                document.querySelector("#card").appendChild(canvas)
+            });
+        },1000)
+       
+    </script>
+  </body>
+</html>
